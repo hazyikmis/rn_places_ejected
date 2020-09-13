@@ -8,6 +8,59 @@ To revert the changes after this command completes, you can run the following:
 git clean --force && git reset --hard
 ```
 
+# Eject Output:
+
+\$ expo eject
+Your git working tree is clean
+To revert the changes after this command completes, you can run the following:
+git clean --force && git reset --hard
+
+� Android package Learn more: https://expo.fyi/android-package
+
+? What would you like your Android package name to be? com.halo.places
+
+� iOS Bundle Identifier Learn more: https://expo.fyi/bundle-identifier
+
+? What would you like your iOS bundle identifier to be? com.halo.places
+
+✔ App configuration (app.json) updated.
+✔ Created native project directories (./ios and ./android) and updated .gitignore.
+✔ Added Metro bundler configuration.
+✔ Updated package.json and added index.js entry point for iOS and Android.
+✔ Installed JavaScript dependencies.
+
+\ Applying iOS configuration
+Using node to generate images. This is much slower than using native packages.
+› Optionally you can stop the process and try again after successfully running `npm install -g sharp-cli`.
+
+⚠️ iOS configuration applied with warnings that should be fixed:
+
+- splash: This is the image that your app uses on the loading screen, we recommend installing and using expo-splash-screen. Learn more: https://github.com/expo/expo/blob/master/packages/expo-splash-screen/README.md
+  ⚠️ Android configuration applied with warnings that should be fixed:
+- splash: This is the image that your app uses on the loading screen, we recommend installing and using expo-splash-screen. Learn more: https://github.com/expo/expo/blob/master/packages/expo-splash-screen/README.md
+  ✔ Skipped installing CocoaPods because operating system is not on macOS.
+
+⚠️ Your app includes 1 package that requires additional setup in order to run:
+
+- expo-image-picker: https://github.com/expo/expo/tree/master/packages/expo-image-picker
+
+➡️ Next steps
+
+- � You may want to run npx @react-native-community/cli doctor to help install any tools that your app may
+  need to run your native projects.
+- � When CocoaPods is installed, initialize the project workspace: npx pod-install
+- � Download your Android keystore (if you're not sure if you need to, just run the command and see): expo
+  fetch:android:keystore
+
+☑️ When you are ready to run your project
+To compile and run your project in development, execute one of the following commands:
+
+- npm run ios
+- npm run android
+- npm run web
+
+# App Info
+
 > In this app you can find:
 
 - React Navigation 5 usage (sending & receiving parameters between screens & components & navigator)
